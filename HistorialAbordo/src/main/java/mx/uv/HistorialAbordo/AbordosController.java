@@ -12,7 +12,6 @@ import java.time.format.DateTimeFormatter;
 
 
 @RestController
-//@RequestMapping(path = "/Abordoss")
 public class AbordosController {
     @Autowired
     private AbordosRepository iabordos;
