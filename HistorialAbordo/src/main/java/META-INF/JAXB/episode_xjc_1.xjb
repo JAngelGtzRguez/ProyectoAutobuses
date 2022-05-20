@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.05.19 a las 12:19:49 AM CDT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="https://uv.mx/historialAbordos">
+    <schemaBindings map="false">
+      <package name="https.uv_mx.historialabordos"/>
+    </schemaBindings>
+    <bindings scd="tns:ConsultarAbordosResponse">
+      <class ref="https.uv_mx.historialabordos.ConsultarAbordosResponse"/>
+    </bindings>
+    <bindings scd="tns:AbordarRequest">
+      <class ref="https.uv_mx.historialabordos.AbordarRequest"/>
+    </bindings>
+    <bindings scd="tns:AbordarResponse">
+      <class ref="https.uv_mx.historialabordos.AbordarResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
