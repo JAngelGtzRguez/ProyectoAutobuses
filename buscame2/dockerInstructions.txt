@@ -1,0 +1,4 @@
+git clone url.proyectoGit
+cat > dockerfile
+docker build -t dockerimage -f dockerfile .
+docker run -it --rm -p 8080:8080 IDimage
