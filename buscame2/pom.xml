@@ -19,6 +19,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 
@@ -40,12 +45,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 			<plugin>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
 				<version>0.14.0</version>
 				<executions>
 					<execution>
+					 	<id>jaxb2-generate</id>
+                        <phase>generate-sources</phase>
 						<goals>
 							<goal>generate</goal>
 						</goals>
@@ -53,7 +61,7 @@
 				</executions>
 				<configuration>
 					<schemaLenguage>WSDL</schemaLenguage>
-					<generateDirectory>${project.basedir}/src/main/java</generateDirectory>
+					<schemaDirectory>${project.basedir}/src/main/java</schemaDirectory>
 					<generatePackage>com.autobuses.wsdl</generatePackage>
 					<schemas>
 						<schema>
@@ -82,5 +90,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

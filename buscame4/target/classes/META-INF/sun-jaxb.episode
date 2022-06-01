@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.05.29 a las 08:39:45 PM CDT 
+
+  -->
+      
+    <bindings xmlns:tns="https://buscame.autobuses.com/buscame" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.autobuses.wsdl"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:ListarCarrosResponse">
+                  
+            <class ref="com.autobuses.wsdl.ListarCarrosResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:CrearRequest">
+                  
+            <class ref="com.autobuses.wsdl.CrearRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:CrearResponse">
+                  
+            <class ref="com.autobuses.wsdl.CrearResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:QuitarCarroRequest">
+                  
+            <class ref="com.autobuses.wsdl.QuitarCarroRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:QuitarCarroResponse">
+                  
+            <class ref="com.autobuses.wsdl.QuitarCarroResponse"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>

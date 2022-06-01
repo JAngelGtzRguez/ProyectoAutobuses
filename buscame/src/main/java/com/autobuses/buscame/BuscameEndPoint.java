@@ -50,13 +50,15 @@ public class BuscameEndPoint
     public QuitarCarroResponse deleteAutobus(@RequestPayload QuitarCarroRequest request)
     {
         QuitarCarroResponse response = new QuitarCarroResponse();
+        ArrayList<ListarCarrosResponse.Carro> listaCarros2 = new ArrayList<ListarCarrosResponse.Carro>();
         for(ListarCarrosResponse.Carro carro : listaCarros)
         {
-            if(carro.getId() == request.getId())
+            if(carro.getId() != request.getId())
             {
-                listaCarros.remove(carro);
+                listaCarros2.add(carro);
             }
         }
+        listaCarros = listaCarros2;
         response.setResponse(true);
         return response;
     }
